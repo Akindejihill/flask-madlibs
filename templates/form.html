@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{%block title%} Madlibs Form {% endblock %}
+
+{% block content %}
+<h1>Madlibs</h1>
+<h2>Chose a word for each part of speech:</h3>
+
+<form action="/madlibs" method="POST">
+    <label for="place">place: </label>
+    <input id="place" name="place" type="text"><br><br>
+    
+    <label for="noun">noun: </label>
+    <input id="noun" name="noun" type="text"><br><br>
+    
+    <label for="verb">verb: </label>
+    <input id="verb" name="verb" type="text"><br><br>
+    
+    <label for="adjective">adjective: </label>
+    <input id="adjective" name="adjective" type="text"><br><br>
+    
+    <label for="plural_noun">plural noun: </label>
+    <input id="plural_noun" name="plural_noun" type="text"><br><br>
+
+    <br><br><br>
+    <input type="submit" value="submit">
+
+</form>
+{% endblock %}
